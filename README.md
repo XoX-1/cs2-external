@@ -127,5 +127,5 @@ Offsets are sourced from [a2x/cs2-dumper](https://github.com/a2x/cs2-dumper) and
 ---
 
 <p align="center">
-  <sub>Built with ❤️</sub>
+  <sub>Built with ❤️ and C++</sub>
 </p>
