@@ -1,4 +1,9 @@
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Game-Counter--Strike%202-yellow?style=for-the-badge&logo=steam" />
+  <img src="https://img.shields.io/badge/Type-External-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-C++20-00599C?style=for-the-badge&logo=cplusplus" />
+  <img src="https://img.shields.io/badge/Overlay-DirectX%2011-green?style=for-the-badge" />
+</p>
 
 # 🎯 CS2 External
 
@@ -122,5 +127,5 @@ Offsets are sourced from [a2x/cs2-dumper](https://github.com/a2x/cs2-dumper) and
 ---
 
 <p align="center">
-  <sub>Built with ❤️ and C++</sub>
+  <sub>Built with ❤️</sub>
 </p>
