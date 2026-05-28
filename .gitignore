@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CS2External/obj
+/CS2External/bin
+/CS2External/.vs/CS2External
+*.user

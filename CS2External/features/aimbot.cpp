@@ -23,12 +23,16 @@ namespace Aimbot {
         Vector3 eyePos = localOrigin + viewOffset;
         Vector3 viewAngles = mem.Read<Vector3>(mem.client + offsets::client::dwViewAngles);
 
+        uintptr_t aimpunchservices = mem.Read<uintptr_t>(localPawn + offsets::csPawn::m_pAimPunchServices);
+
+        if (!aimpunchservices) return;
+
         // Read punch angle
         Vector3 punchAngle = {};
         if (config.bRcs) {
             int shotsFired = mem.Read<int>(localPawn + offsets::csPawn::m_iShotsFired);
             if (shotsFired > 1) {
-                punchAngle = mem.Read<Vector3>(localPawn + offsets::csPawn::m_aimPunchAngle);
+                punchAngle = mem.Read<Vector3>(aimpunchservices + offsets::csPawn::m_predictableBaseAngle);
             }
         }
 

@@ -20,7 +20,7 @@ struct Config {
     int aimKey = 0x02;          // VK_RBUTTON
     float aimFov = 5.0f;
     float aimSmooth = 5.0f;
-    int aimBone = 6;            // BoneIndex::HEAD
+    int aimBone = 7;            // BoneIndex::HEAD
     bool bRcs = true;
     bool bFovCircle = false;
 

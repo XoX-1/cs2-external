@@ -35,24 +35,35 @@ struct Matrix4x4 {
 };
 
 namespace BoneIndex {
-    constexpr int PELVIS = 0;
-    constexpr int SPINE_1 = 2;
+    constexpr int ORIGIN = 0;
+
+    constexpr int PELVIS = 1;
+
+    constexpr int SPINE_0 = 2;
+    constexpr int SPINE_1 = 3;
     constexpr int SPINE_2 = 4;
-    constexpr int NECK = 5;
-    constexpr int HEAD = 6;
-    constexpr int LEFT_SHOULDER = 8;
-    constexpr int LEFT_ELBOW = 9;
+
+    constexpr int NECK = 6;
+    constexpr int HEAD = 7;
+
+    constexpr int LEFT_SHOULDER = 9;
+    constexpr int LEFT_ELBOW = 10;
     constexpr int LEFT_HAND = 11;
+
     constexpr int RIGHT_SHOULDER = 13;
     constexpr int RIGHT_ELBOW = 14;
-    constexpr int RIGHT_HAND = 16;
-    constexpr int LEFT_HIP = 22;
-    constexpr int LEFT_KNEE = 23;
-    constexpr int LEFT_FOOT = 24;
-    constexpr int RIGHT_HIP = 25;
-    constexpr int RIGHT_KNEE = 26;
-    constexpr int RIGHT_FOOT = 27;
-    constexpr int BONE_COUNT = 28;
+    constexpr int RIGHT_HAND = 15;
+
+    constexpr int LEFT_HIP = 17;
+    constexpr int LEFT_KNEE = 18;
+    constexpr int LEFT_FOOT = 19;
+
+    constexpr int RIGHT_HIP = 20;
+    constexpr int RIGHT_KNEE = 21;
+    constexpr int RIGHT_FOOT = 22;
+
+    constexpr int CHEST = 23;
+    constexpr int BONE_COUNT = 24;
 }
 
 inline bool WorldToScreen(const Vector3& pos, Vector2& screen, const Matrix4x4& matrix, int width, int height) {

@@ -65,9 +65,11 @@ namespace ESP {
         ImU32 col = ImGui::ColorConvertFloat4ToU32(ImVec4(color[0], color[1], color[2], color[3]));
 
         static const int connections[][2] = {
+            // Spine
             { BoneIndex::PELVIS,         BoneIndex::SPINE_1 },
             { BoneIndex::SPINE_1,        BoneIndex::SPINE_2 },
-            { BoneIndex::SPINE_2,        BoneIndex::NECK },
+            { BoneIndex::SPINE_2,        BoneIndex::CHEST },
+            { BoneIndex::CHEST,          BoneIndex::NECK },
             { BoneIndex::NECK,           BoneIndex::HEAD },
             { BoneIndex::NECK,           BoneIndex::LEFT_SHOULDER },
             { BoneIndex::LEFT_SHOULDER,  BoneIndex::LEFT_ELBOW },
